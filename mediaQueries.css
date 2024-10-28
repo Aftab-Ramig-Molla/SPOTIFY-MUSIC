@@ -1,6 +1,6 @@
 
 /* This media query will apply when the screen width is 343px or less */
-@media (max-width: 450px)  {
+@media (max-width: 389px) and (max-width: 450px)  {
     body {
         /* Ensure body content takes up full width */
         width: 100%;
@@ -25,7 +25,7 @@
         position: relative;
     }
     .songItem .songName{
-        margin-right: 70px;
+        margin-right: 100px;
 
     }
     .songItem .songlistPlay{
