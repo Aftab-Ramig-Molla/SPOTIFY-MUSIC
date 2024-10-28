@@ -1,6 +1,4 @@
-
-/* This media query will apply when the screen width is 343px or less */
-@media (max-width: 389px) and (max-width: 450px)  {
+@media (max-width: 389px)   {
     body {
         /* Ensure body content takes up full width */
         width: 100%;
@@ -26,7 +24,6 @@
     }
     .songItem .songName{
         margin-right: 100px;
-
     }
     .songItem .songlistPlay{
     position: absolute;
@@ -101,32 +98,15 @@
 }
 
 
+  
 
-
-
-
-
-
-
-
-
-
-
-/* This media query will apply when the screen width is 343px or less */
-@media (max-width: 500px){
-    body {
-        /* Ensure body content takes up full width */
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; /* Prevent horizontal scroll */
-    }
+@media (min-width: 390px) and (max-width: 500px) {
+  /* Styles here */
  .container {
         /* Make sure container spans full width */
         width: 100%;
         padding: 10px;
     }
-
     .songItem{
         /* Adjust song items to fit well on a smaller screen */
         display: flex;
@@ -135,6 +115,7 @@
         padding: 10px;
         width: 100%;
         position: relative;
+        
     }
     .songItem .songName{
         margin-right: 130px;
@@ -145,7 +126,7 @@
     padding-left: 40px;
     height: 20px;
    margin-right: 20px;
-   left: 320px;
+   right: 10px;
     }
     .songItem .songItemPlay{
         padding-left: 2px;
@@ -216,4 +197,3 @@
     }
     
 }
-
