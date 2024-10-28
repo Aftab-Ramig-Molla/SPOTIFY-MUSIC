@@ -1,86 +1,103 @@
-@media (max-width: 600px) {
-    nav ul{
-        gap: 30px;
-        width: 100vw;
+
+/* This media query will apply when the screen width is 343px or less */
+@media (max-width: 343px) {
+    body {
+        /* Ensure body content takes up full width */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scroll */
     }
-   .brand img{
-    height: 45px;
-    width: 60px;
-   }
+
     .container {
-        width: 90%; /* Increase width for smaller screens */
-        padding: 20px;
+        /* Make sure container spans full width */
+        width: 100%;
+        padding: 10px;
     }
-    .songItem {
-        flex-direction: column; /* Stack image and name */
-        align-items: flex-start;
-        padding-top: 5px;
+
+    .songItem{
+        /* Adjust song items to fit well on a smaller screen */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        width: 100%;
         position: relative;
     }
+    .songItem .songName{
+        margin-right: 70px;
 
-
-    .songItem img {
-        width: 40px; /* Smaller images for mobile */
-    }
-     
-    .songItem span{
-        position: absolute;
-        font-size: small;
-        width: 200px;
-        left: 70px;
-        top: 10px;
-    }
-    .songItem span .timestamp{
-        width: 70px;
     }
     .songItem .songlistPlay{
-        position: absolute;
-        left: 170px;
+    position: absolute;
+     left: 250px;
+     
     }
-    .bottom {
-        flex-direction: column; /* Stack elements in the bottom bar */
-        gap: 10px;
-        position: relative;
-        
+    .songItem .songItemPlay{
+        padding-left: 2px;
     }
-    .bottom .songInfo{
-        position: absolute;
-        right: 250px;
+
+    .songItemPlay {
+        width: 5px;
+        height: 5px;
+    }
+    .songName {
+        /* Reduce font size to fit on small screens */
+        font-size: 12px;
+    }
+
+    .timestamp {
+        /* Adjust timestamp font size and spacing */
         font-size: 10px;
-        margin-top: 5px;
-        margin-right: 2px;
+        margin-left: 5px;
     }
-    .bottom .songInfo img{
+
+    img {
+        /* Make sure images are scaled down */
+        max-width: 50px;
+        height: 35px;
+        margin-right: 5px;
+    }
+
+    .header {
+        /* Adjust header for small screens */
+        font-size: 16px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    /* Adjust buttons like play/pause */
+    .fa-play-circle, .fa-pause-circle {
+        font-size: 18px;
+    }
+
+    /* Ensure progress bar fits */
+    #myprogressBar {
+        width: 90%;
+    }
+    .bottom{
         position: relative;
-        right: 80px;
-        height: 50px;
-        width: 50px;
-        padding-right: 15px;
+    }
+    .songInfo{
+        margin-top: 15px;
+    }
+    .songInfo img{
+        width: 35px;
+        height: 40px;
+        position: relative;
+        right: 20px;
+        padding-right: 10px;
+    }
+     #masterSongName
+    {
+        position:absolute;
+        font-size: 10px;
+        width: 70px;
+        left: 10px;
+        right: 30px;
 
     }
-    .bottom .songInfo #masterSongName{
-       position: absolute;
-       right: 2px;
-       text-align: center;
-    }
-   
+    
 }
 
-@media (min-width: 601px) and (max-width: 900px) {
-    .container {
-        width: 80%; /* Adjust width for tablets */
-        padding: 30px;
-    }
 
-    .songItem {
-        height: 60px; /* Slightly taller items for larger screens */
-    }
-
-    .songItem img {
-        width: 50px; /* Adjust image size */
-    }
-
-    nav ul {
-        justify-content: space-between; /* Space items evenly */
-    }
-}
